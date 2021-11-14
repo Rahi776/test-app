@@ -4,7 +4,7 @@ const app = express()
 app.get('/', (req, res) =>{
   res.send("My Name is Rehmat Ali.This is my node-application");
 })
-
-app.listen(3000, () =>{
+const port= process.env.port || 3000;
+app.listen(port, () =>{
   console.log("The application is successfully Running");
 })
